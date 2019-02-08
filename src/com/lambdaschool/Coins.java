@@ -3,10 +3,10 @@ package com.lambdaschool;
 public class Coins
 {
     private String name;
-    private int theValue;
+    private double theValue;
 
     // constructor
-    public Coins(String name, int theValue) {
+    public Coins(String name, double theValue) {
         this.name = name;
         this.theValue = theValue;
     }
@@ -22,11 +22,11 @@ public class Coins
         this.name = name;
     }
 
-    public int getTheValue() {
+    public double getTheValue() {
         return theValue;
     }
 
-    public void setTheValue(int theValue) {
+    public void setTheValue(double theValue) {
         this.theValue = theValue;
     }
 

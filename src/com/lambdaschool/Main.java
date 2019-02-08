@@ -8,6 +8,6 @@ public class Main
     public static void main(String[] args)
     {
         ArrayList<Coins> coinsArrayList = new ArrayList<>();
-
+        coinsArrayList.add(new Coins("Dollar", 1.00));
     }
 }
