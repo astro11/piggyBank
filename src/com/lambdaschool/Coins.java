@@ -2,13 +2,20 @@ package com.lambdaschool;
 
 public class Coins
 {
-    private String name;
-    private double theValue;
+    public String name;
+    public double theValue;
+    public int quantity;
+//    private double inBank;
+//
+//    public double bankroll() {
+//        return quantity * theValue;
+//    }
 
     // constructor
-    public Coins(String name, double theValue) {
+    public Coins(String name, double theValue, int quantity) {
         this.name = name;
         this.theValue = theValue;
+        this.quantity = quantity;
     }
 
     // getters and setters
@@ -30,11 +37,20 @@ public class Coins
         this.theValue = theValue;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
     @Override
     public String toString() {
         return "Coins{" +
                 "name='" + name + '\'' +
                 ", theValue=" + theValue +
+                ", quantity=" + quantity +
                 '}';
     }
 }
