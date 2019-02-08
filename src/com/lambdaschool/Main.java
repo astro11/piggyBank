@@ -21,6 +21,14 @@ public class Main
         System.out.println(coinsArrayList.get(3).quantity + " " + coinsArrayList.get(3).name);
         System.out.println(coinsArrayList.get(4).quantity + " " + coinsArrayList.get(4).name);
 
+        System.out.println("\n **** The Value of the Piggy Bank ****");
+        for (Coins c : coinsArrayList)
+        {
+            System.out.println(c.getTheValue() * c.getQuantity());
+        }
+
+
+//        System.out.println("The piggy bank holds " + "$" + coinsArrayList.);
 
 //        System.out.println(coinsArrayList.get(1).name + " has a whopping " + coinsArrayList.get(1).theValue * coinsArrayList.get(1).quantity);
 
